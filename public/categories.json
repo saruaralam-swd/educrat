@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c3.svg",
+    "title": "IT and Software",
+    "course": "3"
+  },
+  {
+    "id": 2,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c1.svg",
+    "title": "Graphic Design",
+    "course": "5"
+  },
+  {
+    "id": 3,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c3.svg",
+    "title": "IT and Software",
+    "course": "3"
+  },
+  {
+    "id": 4,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c1.svg",
+    "title": "Graphic Design",
+    "course": "5"
+  },
+  {
+    "id": 5,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c2.svg",
+    "title": "Sales Marketing",
+    "course": "1"
+  },
+  {
+    "id": 6,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c1.svg",
+    "title": "Graphic Design",
+    "course": "5"
+  },
+  {
+    "id": 7,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c2.svg",
+    "title": "Sales Marketing",
+    "course": "1"
+  },
+  {
+    "id": 8,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c5.svg",
+    "title": "Personal Development",
+    "course": "6"
+  },
+  {
+    "id": 9,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c1.svg",
+    "title": "Graphic Design",
+    "course": "4"
+  },
+  {
+    "id": 10,
+    "picture": "https://demoapus1.com/educrat/learnpress/wp-content/uploads/2022/07/c2.svg",
+    "title": "Sales Marketing",
+    "course": "1"
+  }
+]
