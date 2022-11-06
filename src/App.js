@@ -3,9 +3,7 @@ import './App.css';
 import Main from './Layout/Main';
 import Empty from './component/Empty/Empty'
 import Home from './component/Home/Home';
-import Courses from './component/Courses/Courses';
-import Blog from './component/Blog/Blog'
-import HeroSection from './component/HeroSection/HeroSection';
+import Products from './component/Products/Products';
 
 function App() {
   const router = createBrowserRouter([
@@ -17,6 +15,10 @@ function App() {
           path: '/',
           element: <Home></Home>
         },
+        {
+          path: '/products',
+          element: <Products></Products>
+        }
       ]
     },
     {

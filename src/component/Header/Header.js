@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../img/logo-white.svg'
+import Logo from '../../assets/img/logo-white.svg'
 import { Bars3CenterLeftIcon, MagnifyingGlassIcon, ShoppingCartIcon } from '@heroicons/react/24/solid'
 import { Link } from 'react-router-dom';
 import './Header.css'
@@ -22,6 +22,7 @@ const Header = () => {
         <Link to='/shop'>Shop</Link>
         <Link to='/pages'>Pages</Link>
         <Link to='/contact'>Contact</Link>
+        <Link to='/products'>Products</Link>
       </nav>
 
       <div className='flex items-center space-x-5'>
