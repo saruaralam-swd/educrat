@@ -4,6 +4,10 @@ import Main from './Layout/Main';
 import Empty from './component/Empty/Empty'
 import Home from './component/Home/Home';
 import Products from './component/Products/Products';
+import Login from './component/Login/Login';
+import SignUp from './component/SignUp/SignUp';
+import Cart from './component/Carts/Carts';
+import Carts from './component/Carts/Carts';
 
 function App() {
   const router = createBrowserRouter([
@@ -16,8 +20,25 @@ function App() {
           element: <Home></Home>
         },
         {
+          path: '/home',
+          element: <Home></Home>
+        },
+        {
           path: '/products',
           element: <Products></Products>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
+        },
+        {
+          path: '/signup',
+          element: <SignUp></SignUp>
+        },
+        {
+          path: '/cart',
+          loader: () => fetch('http://localhost:5000/cart'),
+          element: <Carts></Carts>
         }
       ]
     },

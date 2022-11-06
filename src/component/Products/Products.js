@@ -3,6 +3,14 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import ProductCard from '../ProductCard/ProductCard';
 
+/* 
+1. 70(count)  / 10(size)  = 7(pages)
+
+3(page) * 10(size) = skip 
+10 (size)  = limit
+4 * 10 = 40 
+5 * 10 = 50 */
+
 const Products = () => {
   const [products, setProducts] = useState([]);
 
@@ -13,9 +21,6 @@ const Products = () => {
   const pages = Math.ceil(count / size);
 
   const ary = [...Array(pages).keys()];
-
-  console.log('per page data ', size);
-  console.log('page num', page)
 
   useEffect(() => {
     const url = `http://localhost:5000/product?page=${page}&size=${size}`
@@ -31,13 +36,13 @@ const Products = () => {
   return (
     <div>
       <h2>Total Product Found {count}</h2>
-      
+
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 w-3/4 mx-auto'>
         {
           products.map(p => <ProductCard key={p._id} data={p}></ProductCard>)
         }
       </div>
-      
+
       <div className='mx-20 m-20'>
         <p>Currently selected page: {page + 1} and size : {size}</p>
 
@@ -46,7 +51,7 @@ const Products = () => {
         }
 
         <select onChange={(e) => setSize(e.target.value)} className='border px-2 rounded-md '>
-          <option value='5' selected>5</option>
+          <option value='5'>5</option>
           <option value='10'>10</option>
           <option value='15'>15</option>
           <option value='20'>20</option>
