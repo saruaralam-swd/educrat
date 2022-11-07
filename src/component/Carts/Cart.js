@@ -10,7 +10,7 @@ const Cart = ({ cart, handleDeleteCartProduct }) => {
       <img className='h-[100px] rounded-md' src={img} alt="" />
       <h2 className='font-semibold'>name: {name}</h2>
       <div className='flex items-center gap-5'>
-        <Link to={`/checkout/${_id}`}>
+        <Link to={`/cart/${_id}`}>
           <button className='bg-indigo-600 hover:bg-indigo-700 text-white rounded-md px-4 py-2 font-semibold'>order now</button>
         </Link>
 

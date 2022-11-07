@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/img/logo-white.svg'
-import { Bars3CenterLeftIcon, MagnifyingGlassIcon, ShoppingCartIcon, } from '@heroicons/react/24/solid';
+import { Bars3CenterLeftIcon, ShoppingCartIcon, } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import { useContext } from 'react';
@@ -9,13 +9,11 @@ import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
 
-
   const handleLogOut = () => {
     logOut()
       .then(() => { })
       .catch(error => console.log(error.message));
   };
-
 
   return (
     <header className='header md:flex md:justify-between items-center bg-[#140342] text-white px-[3%] space-y-5 md:space-y-0 p-3'>
@@ -29,15 +27,13 @@ const Header = () => {
 
       <nav className='space-x-10'>
         <Link to='/home'>Home</Link>
-        {/* <Link to='/courses'>Courses</Link> */}
-        {/* <Link to='/blog'>Blog</Link> */}
-        {/* <Link to='/shop'>Shop</Link> */}
-        {/* <Link to='/pages'>Pages</Link> */}
         <Link to='/products'>Products</Link>
+        <Link to='/orders'>Orders</Link>
       </nav>
 
       <div className='flex items-center space-x-5'>
-        <MagnifyingGlassIcon className='h-6 w-6' />
+        {/* <MagnifyingGlassIcon className='h-6 w-6' /> */}
+        <input type="text" name="text" className='px-2 py-1 rounded-md text-black focus:outline-none' placeholder='search..' />
         <Link to='/cart'> <ShoppingCartIcon className='h-6 w-6' /></Link>
 
         {

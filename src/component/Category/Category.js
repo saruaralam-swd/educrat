@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Category = ({ category }) => {
-  console.log(category);
 
   const {picture, title, course} = category;
 

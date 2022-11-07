@@ -1,32 +1,43 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 
 const ProductCard = ({ data }) => {
+  const { user } = useContext(AuthContext);
   const { _id, name, img } = data;
 
+  const navigate = useNavigate();
 
   const handleAddToCart = (id, name, img) => {
+
+    if (!user) {
+      alert('please login')
+      navigate('/login');
+      return;
+    }
+
     fetch(`http://localhost:5000/product/${id}`, {
       method: 'post',
       headers: {
-        'content-type' : 'application/json'
+        'content-type': 'application/json'
       },
       body: JSON.stringify({
-        name, 
+        name,
         productId: id,
         img
       })
     })
-    .then(res => res.json())
-    .then(data => {
-      console.log(data);
-      if (data.success) {
-        alert(data.message)
-      }
-    })
-    .catch(err => {
-      console.error(err)
-    })
+      .then(res => res.json())
+      .then(data => {
+        console.log(data);
+        if (data.success) {
+          alert(data.message)
+        }
+      })
+      .catch(err => {
+        console.error(err)
+      })
 
   }
 

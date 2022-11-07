@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import { FaCheck, FaEye, FaEyeSlash } from 'react-icons/fa';
 
 const SignUp = () => {
-  const { createUser, profileUpdate } = useContext(AuthContext);
+  const { createUser, profileUpdate, logOut } = useContext(AuthContext);
+
+  const navigate= useNavigate();
 
   const handleCreateUser = (e) => {
     e.preventDefault();
@@ -21,6 +21,8 @@ const SignUp = () => {
         console.log(user);
         handleUpdateProfile(name)
         form.reset();
+        logOut();
+        navigate('/login')
       })
       .catch(error => console.log(error.message))
   };
