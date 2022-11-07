@@ -37,7 +37,6 @@ function App() {
         },
         {
           path: '/cart',
-          loader: () => fetch('http://localhost:5000/cart'),
           element: <Carts></Carts>
         }
       ]

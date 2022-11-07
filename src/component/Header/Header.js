@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from '../../assets/img/logo-white.svg'
-import { Bars3CenterLeftIcon, MagnifyingGlassIcon, ShoppingCartIcon, } from '@heroicons/react/24/solid'
+import { Bars3CenterLeftIcon, MagnifyingGlassIcon, ShoppingCartIcon, } from '@heroicons/react/24/solid';
 import { Link } from 'react-router-dom';
 import './Header.css'
 import { useContext } from 'react';
@@ -29,11 +29,10 @@ const Header = () => {
 
       <nav className='space-x-10'>
         <Link to='/home'>Home</Link>
-        <Link to='/courses'>Courses</Link>
+        {/* <Link to='/courses'>Courses</Link> */}
         {/* <Link to='/blog'>Blog</Link> */}
         {/* <Link to='/shop'>Shop</Link> */}
         {/* <Link to='/pages'>Pages</Link> */}
-        {/* <Link to='/contact'>Contact</Link> */}
         <Link to='/products'>Products</Link>
       </nav>
 
