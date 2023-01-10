@@ -10,6 +10,9 @@ import Carts from './component/Carts/Carts';
 import CheckOut from './component/CheckOut/CheckOut';
 import PrivateRoute from './Route/PrivateRoute/PrivateRoute';
 import Orders from './component/Orders/Orders';
+import TimeTest from './component/TimeTest/TimeTest';
+import Gallery from './component/Gallery/Gallery';
+import 'react-photo-view/dist/react-photo-view.css';
 
 function App() {
   const router = createBrowserRouter([
@@ -48,9 +51,17 @@ function App() {
         },
         {
           path: '/orders',
-          loader: () => fetch('http://localhost:5000/orders'),
-          element: <Orders></Orders>
+          element: <PrivateRoute><Orders></Orders></PrivateRoute>
+        },
+        {
+          path: '/time',
+          element: <TimeTest></TimeTest>
+        },
+        {
+          path: '/gallery',
+          element: <Gallery></Gallery>
         }
+        
       ]
     },
     {

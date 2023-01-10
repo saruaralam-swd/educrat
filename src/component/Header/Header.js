@@ -29,6 +29,8 @@ const Header = () => {
         <Link to='/home'>Home</Link>
         <Link to='/products'>Products</Link>
         <Link to='/orders'>Orders</Link>
+        <Link to='/time'>time</Link>
+        <Link to='/gallery'>Gallery</Link>
       </nav>
 
       <div className='flex items-center space-x-5'>

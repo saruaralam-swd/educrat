@@ -35,7 +35,7 @@ const Products = () => {
 
   return (
     <div>
-      <h2>Total Product Found {count}</h2>
+      <h2 className='font-semibold text-2xl text-center my-5'>Total Product Found {count}</h2>
 
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 w-3/4 mx-auto'>
         {

@@ -1,18 +1,22 @@
 import React from 'react';
+import { useContext } from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
+import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
 import Cart from './Cart';
 
 const Carts = () => {
+  const {user} = useContext(AuthContext);
+
   const [carts, setCarts] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:5000/cart')
+    fetch(`http://localhost:5000/cart?email=${user?.email}`)
       .then(res => res.json())
       .then(data => {
         setCarts(data)
       })
-  }, []);
+  }, [user?.email]);
 
   const handleDeleteCartProduct = (_id, name) => {
     const permission = window.confirm(`your want to delete ${name} product`);

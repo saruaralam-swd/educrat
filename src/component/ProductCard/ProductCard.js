@@ -25,7 +25,8 @@ const ProductCard = ({ data }) => {
       body: JSON.stringify({
         name,
         productId: id,
-        img
+        img,
+        email: user?.email
       })
     })
       .then(res => res.json())

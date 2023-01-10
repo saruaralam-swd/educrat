@@ -18,11 +18,12 @@ const SignUp = () => {
     createUser(email, password)
       .then(result => {
         const user = result.user;
+        logOut();
         console.log(user);
         handleUpdateProfile(name)
-        form.reset();
-        logOut();
+        alert('account create success. please login ')
         navigate('/login')
+        form.reset();
       })
       .catch(error => console.log(error.message))
   };
