@@ -3,18 +3,16 @@
 
 Live link : [...]
 
- Markup : * Bullet list
-              * Nested bullet
-                  * Sub-nested bullet etc
-          * Bullet list item 2
+* A
+  * A1
+      * A11
+* B
 
--OR-
+- A
+  - A1
+      - A11
+- B
 
- Markup : - Bullet list
-              - Nested bullet
-                  - Sub-nested bullet etc
-          - Bullet list item 2 
-          
 # Feature
 The grocery delivery web portal has three primary integrations
 ⋅⋅1. Buyer-side
