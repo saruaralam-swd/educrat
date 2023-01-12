@@ -6,7 +6,7 @@ Live link : [...]
 # Feature
 The grocery delivery web portal has three primary integrations
 - Buyer-side
- -  Easy Registration with email, google, and Facebook
+ --  Easy Registration with email, google, and Facebook
 Buyers can report the product
 24 hours support section will be provided
 Delivery options like Home delivery and Pickup system
