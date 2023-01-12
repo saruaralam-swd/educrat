@@ -3,8 +3,9 @@
 
 Live link : [...]
 
+## Feature & Functionality:
 
-# Feature
+## Details
 The grocery delivery web portal has three primary integrations
 1. Buyer-side
     * Easy Registration with email, google, and Facebook
@@ -25,35 +26,31 @@ The grocery delivery web portal has three primary integrations
     * Easy payment options
 
 2. Delivery-side
-  * Easy Registration and edit the profile of the delivery person
-  * Manage order (view order placed and details)
-  * Status update of order (in progress, delivered, delayed, canceled)
-  * Delivery and payments History.
-  * Hassle-free registration/Login and edit profile.
-  * View Deliverable orders.
-  * Accept or Decline order delivery requests.
-  * Show payments Delivery location and buyer's contact number.
-  * Emergency Leave.
-  * Weekly payments.
-  * Delivery and payments History.
-  * Get notification.
-  * Set status working or not working.
+    * Easy Registration and edit the profile of the delivery person
+    * Manage order (view order placed and details)
+    * Status update of order (in progress, delivered, delayed, canceled)
+    * Delivery and payments History.
+    * Hassle-free registration/Login and edit profile.
+    * View Deliverable orders.
+    * Accept or Decline order delivery requests.
+    * Show payments Delivery location and buyer's contact number.
+    * Emergency Leave.
+    * Weekly payments.
+    * Delivery and payments History.
+    * Get notification.
+    * Set status working or not working.
  
 3. Admin-side
-  * Registration and Profile management
-  * Adding products
-  * Assigning orders to the delivery persons
-  * Dashboard to view orders placed, deliveries and payment
-  * Managing the Order
+    * Registration and Profile management
+    * Adding products
+    * Assigning orders to the delivery persons
+    * Dashboard to view orders placed, deliveries and payment
+    * Managing the Order
 
 ## Technology: 
 - MERN (MongoDB, ExpressJs, ReactJs, NodeJs), firebase, vercel, react-router-dom
-
-## css libraries
-- daisyui Tailwind component library
-
-## css frameworks
-- Tailwind
+- css frameworks: Tailwind
+- css libraries: daisyui
 
 ## New Technology: Redex. 
   Redux will help us with better state management. In our project, there might arise complexity  in several state handling. We will update data across this project sharing at the same time. Redux will help a lot to solve this problem.
@@ -62,7 +59,6 @@ The grocery delivery web portal has three primary integrations
 
 
 # Getting Started with Create React App
-
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
