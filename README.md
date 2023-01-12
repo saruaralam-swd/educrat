@@ -1,5 +1,5 @@
 # Project Name: FAST GROCER - (A E-commerce and Home Delivery System)
-# Project Type: Web portal for grocery delivery
+## Project Type: Web portal for grocery delivery
 
 Live link : [...]
 
