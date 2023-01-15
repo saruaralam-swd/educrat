@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 import { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
+import './Header.css'
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -27,11 +28,25 @@ const Header = () => {
 
       <nav className='space-x-10'>
         <Link to='/home'>Home</Link>
+
+        {/* dropdown */}
+        <div className="relative inline-block mr-2">
+          <button className='text-white hover:text-blue-500'>Dropdown</button>
+
+          <div className="absolute hidden pointer-events-none bg-[#140342] text-white p-3 w-40 pt-6">
+            <Link to="/login" className='hover:bg-[#3e1b9f] pl-2 rounded-md block'>Login</Link>
+            <Link to="/time" className='hover:bg-[#3e1b9f] pl-2 rounded-md block'>Time</Link>
+            <Link to="/gallery" className='hover:bg-[#3e1b9f] pl-2 rounded-md block'>Gallery</Link>
+          </div>
+        </div>
+
         <Link to='/products'>Products</Link>
         <Link to='/orders'>Orders</Link>
         <Link to='/time'>time</Link>
         <Link to='/gallery'>Gallery</Link>
       </nav>
+
+
 
       <div className='flex items-center space-x-5'>
         {/* <MagnifyingGlassIcon className='h-6 w-6' /> */}

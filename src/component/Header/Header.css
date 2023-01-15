@@ -5,3 +5,16 @@ body{
 .green {
   color: #00ff84;
 }
+
+/* dropdown css */
+.relative:hover .absolute {
+  display: block;
+  pointer-events: all;
+  animation: slide-down 0.2s ease-out;
+}
+
+@keyframes slide-down {
+  from { transform: translateY(-10px); }
+  to { transform: translateY(0); }
+}
+/* dropdown css end*/
