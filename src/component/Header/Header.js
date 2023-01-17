@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom';
 import './Header.css'
 import { useContext } from 'react';
 import { AuthContext } from '../../Context/AuthProvider/AuthProvider';
-import './Header.css'
 
 const Header = () => {
   const { user, logOut } = useContext(AuthContext);
@@ -17,7 +16,7 @@ const Header = () => {
   };
 
   return (
-    <header className='header md:flex md:justify-between items-center bg-[#140342] text-white px-[3%] space-y-5 md:space-y-0 p-3'>
+    <header className='header md:flex md:justify-between items-center bg-[#140342] text-white px-[3%] space-y-5 md:space-y-0 p-3 sticky top-0'>
       <div className='flex justify-between items-center space-x-10 '>
         <Link to='/'><img src={Logo} alt="" /></Link>
         <Link className='flex space-x-2 font-semibold'>
@@ -30,7 +29,7 @@ const Header = () => {
         <Link to='/home'>Home</Link>
 
         {/* dropdown */}
-        <div className="relative inline-block mr-2">
+        {/* <div className="relative inline-block mr-2">
           <button className='text-white hover:text-blue-500'>Dropdown</button>
 
           <div className="absolute hidden pointer-events-none bg-[#140342] text-white p-3 w-40 pt-6">
@@ -38,12 +37,13 @@ const Header = () => {
             <Link to="/time" className='hover:bg-[#3e1b9f] pl-2 rounded-md block'>Time</Link>
             <Link to="/gallery" className='hover:bg-[#3e1b9f] pl-2 rounded-md block'>Gallery</Link>
           </div>
-        </div>
+        </div> */}
+        {/* dropdown end */}
 
-        <Link to='/products'>Products</Link>
-        <Link to='/orders'>Orders</Link>
-        <Link to='/time'>time</Link>
-        <Link to='/gallery'>Gallery</Link>
+        {/* <Link to='/products'>Products</Link> */}
+        {/* <Link to='/orders'>Orders</Link> */}
+        {/* <Link to='/time'>time</Link>
+        <Link to='/gallery'>Gallery</Link> */}
       </nav>
 
 

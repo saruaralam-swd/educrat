@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Empty = () => {
+const ErrorPage = () => {
   return (
     <div className='h-screen flex justify-center items-center'>
       <h1 className='text-5xl text-gray-400 font-semibold'>404 Page Not Fond!</h1>
@@ -8,4 +8,4 @@ const Empty = () => {
   );
 };
 
-export default Empty;
+export default ErrorPage;
