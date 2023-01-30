@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState } from 'react';
 import Categories from '../Categories/Categories';
 import HeroSection from '../HeroSection/HeroSection';
 import SimpleInput from '../SimpleInput/SimpleInput';
@@ -10,7 +11,7 @@ const Home = () => {
       <HeroSection />
       <Trust />
       <Categories />
-      <SimpleInput />
+      <SimpleInput /> 
     </div>
   );
 };
