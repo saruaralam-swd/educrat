@@ -1,17 +1,18 @@
 import React from 'react';
-import { useState } from 'react';
 import Categories from '../Categories/Categories';
 import HeroSection from '../HeroSection/HeroSection';
 import SimpleInput from '../SimpleInput/SimpleInput';
+import Slider from '../Slider/Slider';
 import Trust from '../Trust/Trust';
 
 const Home = () => {
   return (
     <div>
-      <HeroSection />
-      <Trust />
-      <Categories />
-      <SimpleInput /> 
+      {/* <Slider /> */}
+      {/* <HeroSection /> */}
+      {/* <Trust /> */}
+      {/* <Categories /> */}
+      {/* <SimpleInput />  */}
     </div>
   );
 };

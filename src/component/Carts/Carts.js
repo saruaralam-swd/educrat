@@ -7,7 +7,6 @@ import Cart from './Cart';
 
 const Carts = () => {
   const {user} = useContext(AuthContext);
-
   const [carts, setCarts] = useState([]);
 
   useEffect(() => {

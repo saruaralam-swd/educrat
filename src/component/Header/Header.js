@@ -27,7 +27,6 @@ const Header = () => {
 
       <nav className='space-x-10'>
         <Link to='/home'>Home</Link>
-
         {/* dropdown */}
         {/* <div className="relative inline-block mr-2">
           <button className='text-white hover:text-blue-500'>Dropdown</button>
@@ -39,7 +38,6 @@ const Header = () => {
           </div>
         </div> */}
         {/* dropdown end */}
-
         {/* <Link to='/products'>Products</Link> */}
         {/* <Link to='/orders'>Orders</Link> */}
         {/* <Link to='/time'>time</Link> */}
